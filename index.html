@@ -26,29 +26,23 @@
             <nav class="nav">
                 <a href="./index.html" class="link logo logo-header  font-raleway">
                     <span>WEB</span>STUDIO</a>
-                    <button
-                    class="menu-toggle js-open-menu"
-                    aria-expanded="false"
-                    aria-controls="mobile-menu"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                    >
-                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
                     </svg>
-                  </button>
-                <ul class="list nav-list">
-                    <li>
-                        <a href="./index.html" class="link nav-link current">Studio</a>
-                    </li>
-                    <li>
-                        <a href="./portfolio.html" class="link nav-link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="" class="link nav-link">Contacts</a>
-                    </li>
-                </ul>
+                </button>
+                <div class="container-nav menu">
+                    <ul class="list nav-list">
+                        <li>
+                            <a href="./index.html" class="link nav-link current">Studio</a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html" class="link nav-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="link nav-link">Contacts</a>
+                        </li>
+                    </ul>
             </nav>
             <ul class="list contacts">
                 <li>
@@ -58,6 +52,7 @@
                     <a href="tel:+11(000)111-11-11" class="link contact-link">+11 &lpar;000&rpar; 111-11-11</a>
                 </li>
             </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -385,8 +380,8 @@
                     <input class="form-footer-input" type="email" name="email" placeholder="E-mail">
                     <button type="submit" class="btn btn-footer-form">
                         Subscibe
-                        <svg class="icon-btn-footer"  width="24" height="24">
-                            <use  href="./images/icons.svg#icon-send"></use>
+                        <svg class="icon-btn-footer" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
@@ -448,6 +443,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
 </body>
 
 </html>
