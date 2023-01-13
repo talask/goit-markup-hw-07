@@ -139,6 +139,13 @@ textarea {
 
   
 /*  modal menu */
+@media (max-width: 767px) {
+  .header .container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  }
+}
 
 .menu {
   display: flex;
@@ -165,12 +172,12 @@ textarea {
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+   min-height: 34px;
+  min-width: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-
+/*
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -178,7 +185,7 @@ textarea {
   cursor: pointer;
   border: none;
   border-radius: 50%;
-  outline: none;
+  outline: none; */
 }
 
 @media (min-width: 768px) {
