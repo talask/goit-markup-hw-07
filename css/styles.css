@@ -230,26 +230,33 @@ textarea {
 
 .footer {
     background-color: var(--title-color);
+    padding: 100px 0;
    
 }
 
-@media screen and (min-width: 1200px){
-    .footer {
-        padding: 100px 0;
-    }
+.footer .container {
+    text-align: center;
 }
 
-.footer .container {
-    display: flex;
+@media screen and (min-width: 1200px) {
+    .footer .container {
+        display: flex;
+    }
 }
 
 .footer .wrapper {
     padding: 0;  
+   
 }
+
+/* .footer-logo {
+   text-align: center;
+} */
 
 @media screen and (min-width: 1200px){
 .footer-logo {
     margin-right: 120px;
+    /* margin: 0 auto; */
 }
 }
 
@@ -274,14 +281,12 @@ textarea {
 .footer-social-title,
 .footer-form-title {
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 16px auto;
 }
 
-@media screen and (min-width: 1200px){
 .footer-social-list {
     display: flex;
     gap: 16px;
-}
 }
 
 .team-social-item,
