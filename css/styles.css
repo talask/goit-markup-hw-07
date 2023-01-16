@@ -93,7 +93,8 @@ textarea {
 }
 
 .container {
-    max-width: 390px;
+    min-width: 290px;
+    max-width: 428px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -183,6 +184,7 @@ textarea {
     margin: 0;
     padding: 0;
     background-color: transparent;
+    color: black;
     /* border-radius: 50%; */
     outline: none; 
   }
@@ -232,7 +234,9 @@ textarea {
 }
 
 @media screen and (min-width: 1200px){
-    padding: 100px 0;
+    .footer {
+        padding: 100px 0;
+    }
 }
 
 .footer .container {
@@ -365,9 +369,10 @@ textarea {
     max-width: 1440px;
     height: 603px;
     margin: 0 auto;
-   
     background-image: linear-gradient(rgba(47, 47, 66, 0.7), 
-    rgba(47, 47, 66, 0.7)), url('../images/people-office.jpg');
+    rgba(47, 47, 66, 0.7)); 
+    /* background-image: linear-gradient(rgba(47, 47, 66, 0.7), 
+    rgba(47, 47, 66, 0.7)), url('../images/people-office.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -413,11 +418,12 @@ textarea {
 }
 /* ----- section ----- */
 
-.benefits{
-    padding-bottom: 0;
+@media screen and (min-width: 1200px){
+    .benefits{
+     padding-bottom: 0;
+    }
 }
 
-@media screen and (min-width: 1200px){
 .decoration {
     display:flex;
     align-items: center;
@@ -428,9 +434,24 @@ textarea {
     margin-bottom: 8px;
 }
 
+@media screen and (max-width: 1199px) {
+    .decoration {
+        display: none;
+    }
+}
 
-.team-social-list,
-.clients-list,
+@media screen and (max-width: 767px) {
+    .benefits-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .benefits .section-title {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+
 .benefits-list,
 .works-list,
 .team-list,
@@ -439,9 +460,59 @@ textarea {
     display: flex;
     gap: 24px;
 }
+
 }
+
+@media screen and (max-width: 1199px){
+    .benefits-list {
+        flex-wrap: wrap;
+        row-gap: 72px;
+    }
+
+    .benefits-item {
+        flex-basis: calc((100% - 24px)/2);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .works {
+        display: none;
+    }
+}
+
 .team {
     background-color: var(--logo-footer-color);
+    
+}
+
+@media screen and (max-width: 1199px){
+    .team {
+        margin-bottom: 104px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   
+    .team-list-item {
+        max-width: 264px;
+         margin: 0 auto;
+    }
+
+    .team-list-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    
+    .team-list {
+        flex-wrap: wrap;
+        row-gap: 64px;
+    }
+
+    .team-list-item {
+        flex-basis: calc((100% - 24px)/2);
+    }
 }
 
 .team-list-item {
@@ -494,20 +565,54 @@ textarea {
     background-color: var(--hero-click-color);
 }
 
+.team-social-list {
+    display: flex;
+    gap: 24px;
+}
+
+
 .team .icon-social {
     fill: currentColor;
     margin: 12px auto;
     
 }
 
-.client-item {
-    flex-basis: calc((100% - 24*5)/6);
+/* clients */
+.clients-list {
+    display: flex;
+    gap: 16px;
+}
+
+@media screen and (max-width: 1199px){
+    .clients-list {
+        flex-wrap: wrap;
+        row-gap: 72px;
+    }
+
+    .client-item {
+        flex-basis: calc((100% - 16px*2)/3);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .client-item {
+        flex-basis: calc((100% - 16px)/2);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .clients-list {
+        gap: 24px;
+    }
+    .client-item {
+        flex-basis: calc((100% - 24*5)/6);
+    }
 }
 
 .client-link {
     color: #8E8F99;
-    width: 168px;
-    height: 88px;
+    max-width: 168px;
+    max-height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px; 
 
@@ -524,8 +629,7 @@ textarea {
 
 .client-icon {
     fill: currentColor;
-    margin-top: 16px;
-    margin-left: 32px;
+    margin: 16px 32px;
 }
 
 /* ----- Portfolio ----- */
