@@ -222,17 +222,6 @@ textarea {
     }
   }
 
-  @media (min-width: 768px) { 
-    .menu-toggle { 
-        display: none;
-    }
-    
-    .menu {
-        display: flex;
-      }
-
-  }
-
   .menu-toggle {
     display: flex;
     align-items: center;
@@ -243,6 +232,19 @@ textarea {
     background-color: transparent;
     color: black;
     outline: none; 
+  }
+
+@media (min-width: 768px) { 
+    .menu-toggle { 
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) { 
+    .menu {
+        display: flex;
+      }
+
   }
 
   .btn-menu-toggle {
