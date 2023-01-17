@@ -23,39 +23,39 @@
 <body>
     <header class="header">
         <div class="container">
-            
-                <a href="./index.html" class="link logo logo-header  font-raleway">
-                    <span>WEB</span>STUDIO
-                </a>
-                
-                <button class="btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg class="icon-menu-toggle" width="32" height="22">
-                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
-                    </svg>
-                </button>
-                <div class="container-nav menu">
-                    <nav class="nav">
-                    <ul class="list nav-list">
-                        <li>
-                            <a href="./index.html" class="link nav-link current">Studio</a>
-                        </li>
-                        <li>
-                            <a href="./portfolio.html" class="link nav-link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="" class="link nav-link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
+
+            <a href="./index.html" class="link logo logo-header  font-raleway">
+                <span>WEB</span>STUDIO
+            </a>
+
+            <button class="btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon-menu-toggle" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
+
+            <nav class="nav">
+                <ul class="list nav-list">
+                    <li>
+                        <a href="./index.html" class="link nav-link current">Studio</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="link nav-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="" class="link nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
             <ul class="list contacts">
-                <li>
+                <li class="contacts-item">
                     <a href="mailto:info@devstudio.com" class="link  contact-link">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="contacts-item">
                     <a href="tel:+11(000)111-11-11" class="link contact-link">+11 &lpar;000&rpar; 111-11-11</a>
                 </li>
             </ul>
-            </div>
+
         </div>
     </header>
     <main>
@@ -447,33 +447,64 @@
     </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="btn btn-menu-toggle js-close-menu">
             <svg width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <div class="container-nav mobile-menu">
+        <!-- <div class="container-nav mobile-menu"> -->
             <ul class="list nav-list">
-                <li>
-                    <a href="./index.html" class="link nav-link current">Studio</a>
+                <li class="nav-list-item">
+                    <a href="./index.html" class="link nav-link">Studio</a>
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a href="./portfolio.html" class="link nav-link">Portfolio</a>
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a href="" class="link nav-link">Contacts</a>
                 </li>
             </ul>
-    
-    <ul class="list contacts">
-        <li>
-            <a href="mailto:info@devstudio.com" class="link  contact-link">info@devstudio.com</a>
-        </li>
-        <li>
-            <a href="tel:+11(000)111-11-11" class="link contact-link">+11 &lpar;000&rpar; 111-11-11</a>
-        </li>
-    </ul>
-    </div>
+
+            <ul class="list menu-toggle-contacts">
+                <li class="contacts-item">
+                    <a href="tel:+11(000)111-11-11" class="link contact-link accent">+11 &lpar;000&rpar; 111-11-11</a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:info@devstudio.com" class="link  contact-link">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="list menu-toggle-list">
+                <li class="menu-toggle-item">
+                    <a href="" class="link menu-toggle-link">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-toggle-item">
+                    <a href="" class="link menu-toggle-link">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-toggle-item">
+                    <a href="" class="link menu-toggle-link">
+                        <svg class="icon-social" width="24"" height="24"">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-toggle-item">
+                    <a href="" class="link menu-toggle-link">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        <!-- </div> -->
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/modal-menu.js"></script>
