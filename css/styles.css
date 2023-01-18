@@ -332,11 +332,16 @@ textarea {
 
 .menu-toggle-contacts .accent { 
     font-weight: 600;
-    font-size: 36px;
+    font-size: 7vw;
     line-height: 1.1;
     color: var(--logo-web-color);
 }
 
+@media screen and (min-width: 420px) {
+    .menu-toggle-contacts .accent {
+        font-size: 36px;
+    }
+}
   .icon-menu-toggle {
       stroke: currentColor;
   }
@@ -1005,6 +1010,7 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-width: 300px;
     max-width: 392px;
    
    
@@ -1111,6 +1117,12 @@ textarea {
     padding: 12px 16px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 420px) { 
+    .form-group-textarea {
+        min-width: 290px;
+    }
 }
 
  .form-group-icon {
