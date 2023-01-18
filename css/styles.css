@@ -93,7 +93,7 @@ textarea {
 }
 
 .container {
-    min-width: 290px;
+    min-width: 320px;
     max-width: 428px;
     margin: 0 auto;
     padding: 0 15px;
@@ -283,14 +283,13 @@ textarea {
   
 .menu-container {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 0 60px 0 40px;
+    padding: 80px 60px 40px 40px;
     background-color: var(--logo-footer-color);
     z-index: 999;
   
@@ -298,9 +297,9 @@ textarea {
     transition: transform 250ms ease-in-out;
   }
   
-  .menu-container.is-open {
+.menu-container.is-open {
     transform: translateX(0);
-  }
+}
   
 .menu-container .link {
     font-weight: 700;
@@ -309,9 +308,14 @@ textarea {
     color: var(--title-color);
 }
 
+.mobile-nav-list {
+    margin-bottom: auto;
+}
+
 .menu-toggle-list {
     display: flex;
-    gap: 64px;
+    gap: 56px;
+    margin-top: 48px;
 }
 
 .menu-toggle-list .contacts-item:not(:last-child),
@@ -544,11 +548,19 @@ textarea {
 }
 
 .hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    margin: 0 auto 48px;
+    max-width: 492px;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-title {
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
-    margin: 0 auto 48px;
-    width: 492px;
+    }
 }
 
 .hero-btn {

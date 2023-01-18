@@ -121,7 +121,17 @@
                 <h2 class="section-title works-title">What are we doing</h2>
                 <ul class="list works-list">
                     <li>
-                        <img src="./images/mob_desk.jpg" alt="image desktop" width="360" height="300">
+                        <!-- <img src="./images/mob_desk.jpg" alt="image desktop" width="360" height="300"> -->
+                        <img
+                        srcset="
+                          ./images/img-desktop/desktop-app.jpg    1x,
+                          ./images/img-desktop/desktop-app@2x.jpg 2x
+                        "
+                        src="./images/img-desktop/desktop-app.jpg"
+                        alt="desktop application"
+                        width="360"
+                        height="300"
+                      />
                     </li>
                     <li>
                         <img src="./images/mob.jpg" alt="image phones" width="360" height="300">
@@ -453,7 +463,7 @@
             </svg>
         </button>
         <!-- <div class="container-nav mobile-menu"> -->
-            <ul class="list nav-list">
+            <ul class="list mobile-nav-list">
                 <li class="nav-list-item">
                     <a href="./index.html" class="link nav-link">Studio</a>
                 </li>
@@ -506,6 +516,12 @@
             </ul>
         <!-- </div> -->
     </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/modal-menu.js"></script>
 </body>
