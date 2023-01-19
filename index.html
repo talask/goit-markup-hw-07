@@ -23,18 +23,11 @@
 <body>
     <header class="header">
         <div class="container">
-
+            <nav class="nav">
             <a href="./index.html" class="link logo logo-header  font-raleway">
                 <span>WEB</span>STUDIO
             </a>
-
-            <button class="btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="icon-menu-toggle" width="32" height="22">
-                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
-                </svg>
-            </button>
-
-            <nav class="nav">
+                      
                 <ul class="list nav-list">
                     <li>
                         <a href="./index.html" class="link nav-link current">Studio</a>
@@ -56,6 +49,11 @@
                 </li>
             </ul>
 
+            <button class="btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon-menu-toggle" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -481,7 +479,7 @@
                     </label>
                     <label class="form-group-label">
                         <span class="form-group-span">Comment</span>
-                        <textarea class="form-group-textarea" name="user_comment" cols="39" rows="3" placeholder="Text input"></textarea>
+                        <textarea class="form-group-textarea" name="user_comment" placeholder="Text input"></textarea>
                     </label>
                 </div>
                 <label class="form-group-label label-checkbox">
@@ -510,7 +508,7 @@
         <!-- <div class="container-nav mobile-menu"> -->
             <ul class="list mobile-nav-list">
                 <li class="nav-list-item">
-                    <a href="./index.html" class="link nav-link">Studio</a>
+                    <a href="./index.html" class="link nav-link current">Studio</a>
                 </li>
                 <li class="nav-list-item">
                     <a href="./portfolio.html" class="link nav-link">Portfolio</a>
