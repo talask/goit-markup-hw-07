@@ -223,7 +223,7 @@ textarea {
 }
 
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 1199px) { 
     .contact-link {
         font-weight: 400;
         font-size: 12px;
@@ -375,14 +375,7 @@ textarea {
     color: var(--logo-web-color);
 }
 
-/* @media screen and (min-width: 445px) {
-    .menu-toggle-contacts .accent {
-        font-size: 36px;
-    }  .nav-link.current {
-    color: var(--hero-click-color);
-}
-} */
-  .icon-menu-toggle {
+.icon-menu-toggle {
       stroke: currentColor;
   }
 /*  */
@@ -874,7 +867,6 @@ textarea {
 
 .clients-list {
     display: flex;
-    /* gap: 16px; */
     justify-content: center;
 }
 
@@ -1033,6 +1025,7 @@ textarea {
     height: 100vh;
 
     background: rgba(46, 47, 66, 0.4);
+    z-index: 10;
 
     transition-property: visibility, opacity, transform;
     visibility: visible;
