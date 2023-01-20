@@ -868,32 +868,32 @@ textarea {
 .clients-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
 }
 
-@media screen and (max-width: 1199px){
-    .clients-list {
-        flex-wrap: wrap;
-        column-gap: 16px;
-        row-gap: 72px;
-    }
-
-    .client-item {
-        flex-basis: calc((100% - 16px*2)/3);
-    }
+.client-item {
+    max-width: 190px;
+    flex-basis: calc((100% - 16px)/2);
+    
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px){
+    
     .client-item {
-        flex-basis: calc((100% - 16px)/2);
+        max-width: 168px;
+        flex-basis: calc((100% - 24px*2)/3);
     }
 }
 
 @media screen and (min-width: 1200px){
     .clients-list {
-        gap: 24px;
+        flex-wrap: nowrap;
+        /* gap: 24px; */
     }
     .client-item {
-        flex-basis: calc((100% - 24*5)/6);
+        flex-basis: calc((100% - 24px*5)/6);
     }
 }
 
@@ -903,8 +903,8 @@ textarea {
     justify-content: center;
 
     color: #8E8F99;
-    max-width: 168px;
-    max-height: 88px;
+    height: 88px;
+    
     border: 1px solid #8E8F99;
     border-radius: 4px; 
 
